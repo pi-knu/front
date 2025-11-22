@@ -1,13 +1,14 @@
 
 import Navbar from "@/components/Navbar";
 
+import Hero from "@/components/Hero";
+
 function HomePage() {
   return (
     <div>
       <Navbar />
+      <Hero />
 
-      <h1>Home Page</h1>
-      <p>Welcome to the website!</p>
     </div>
   )
 }
