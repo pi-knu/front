@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
-import LiveAuctions from "../LiveAuctions";
-import FeaturedProducts from "../FeaturedProducts";
+import Hero from "@/components/home-page/Hero";
+import Stats from "@/components/home-page/Stats";
+import LiveAuctions from "../home-page/LiveAuctions";
+import FeaturedProducts from "../home-page/FeaturedProducts";
+import WhyChooseUs from "../home-page/WhyChooseUs";
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
        <Stats />
        <LiveAuctions/>
        <FeaturedProducts/>
+       <WhyChooseUs/>
     </div>
   );
 }

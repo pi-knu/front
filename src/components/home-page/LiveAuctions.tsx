@@ -77,7 +77,7 @@ export default function LiveAuctions() {
                 {auctions.map((item) => (
                     <div
                         key={item.id}
-                        className="p-4 rounded-xl bg-white shadow-sm border flex flex-col"
+                        className="p-4 rounded-xl bg-white shadow-sm border flex flex-col h-full"
                     >
                         <div className="relative h-70 bg-gray-100 rounded-lg overflow-hidden">
                             <img
@@ -141,7 +141,7 @@ export default function LiveAuctions() {
                                     </span>
                                 </div>
 
-                                <div className="flex justify-between items-center text-xs text-gray-500 mt-1">
+                                <div className="flex justify-between items-center text-xs text-gray-500 m">
                                     <span>Increase</span>
                                     <span className="text-green-600">
                                         +${item.increase.toLocaleString()} ({item.increasePercent}%)
@@ -149,13 +149,14 @@ export default function LiveAuctions() {
                                 </div>
                             </div>
 
-                            <Link
+                          
+                        </div>
+                          <Link
                                 to={`/auction/${item.id}`}
-                                className="mt-3 w-full text-center bg-black text-white py-2 rounded-lg text-sm hover:bg-gray-900 transition"
+                                className="mt-auto w-full text-center bg-black text-white py-2 rounded-lg text-sm hover:bg-gray-900 transition"
                             >
                                 View Results
                             </Link>
-                        </div>
                     </div>
 
                 ))}

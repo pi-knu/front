@@ -97,7 +97,7 @@ export default function FeaturedProducts() {
                         </div>
 
                         <button
-                            className="mt-3 w-full bg-black text-white py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-900 transition"
+                            className="mt-auto w-full bg-black text-white py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-900 transition"
                         >
                             <ShoppingCart className="w-4 h-4" />
                             Buy Now
